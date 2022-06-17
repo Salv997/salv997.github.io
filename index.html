@@ -10,22 +10,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body><nav role="navigation">
+<body>
+    <nav role="navigation">
     <div id="menuToggle">
-      <input type="checkbox" />
+      <input class="toggler" type="checkbox" />
       <span></span>
       <span></span>
       <span></span>
       <ul id="menu">
-        <a href="#"><li>Me</li></a>
-        <a href="#"><li>Web Developer</li></a>
-        <a href="#"><li>Graphic Designer</li></a>
-        <a href="#"><li>Portfolio</li></a>
-        <a href="#"><li>Contact me</li></a>
+        <a href="#me"><li>Me</li></a>
+        <a href="#webdeveloper" class="remove-hash"><li>Web Developer</li></a>
+        <a href="#graphicdesigner"><li>Graphic Designer</li></a>
+        <a href="#myportfolio"><li>Portfolio</li></a>
+        <a href="#contact"><li>Contact me</li></a>
       </ul>
     </div>
-  </nav>
-    <div class="section main">
+    </nav>
+    <script>
+        function hideMenu(){
+            let menuOpen = document.querySelector('.toggler').checked;
+            if(menuOpen = true){
+                document.querySelector('.toggler').checked = false;
+            }
+        }
+        window.addEventListener("scroll", hideMenu);
+    </script>
+    <div class="section main" id="me">
         <div class="main-text">
         <h1>
             Hi there!
@@ -58,14 +68,12 @@
         </div>
     </div>
     <div class="section webdevel">
-        <h2>I'm a <br class="mob-only"><span id="proff">Web Developer</span></h2>
+        <h2><div id="webdeveloper"></div>I'm a <br class="mob-only"><span id="proff">Web Developer</span></h2>
         <div class="webdev">
             <div class="left">
                 <div class="left-text">
-                    <p>La mia passione per i computer nasce quando i miei genitori comprarono il mio primo pc più di 20 anni fa. 
-                        Ho iniziato ad approcciarmi al mondo informatico all’età di 12 anni, appena iniziate le scuole medie creando il mio primo sito web e i miei primi programmi in visual basic e C++.
-                        Negli ultimi anni ho studiato meglio ed approfondito l’HTML, il CSS ed il JavaScript, oltre che i vari framework più utilizzati al momento.
-                        Il mio obiettivo è imparare il più possibile e affrontare sfide sempre più complesse.
+                    <p>My passion for computers and tech born when my parents bought me my first PC, more than 20 years ago. I started to approch programming when I turned 12 yo, during middle school, by creating my first projects in C++ and Visual Basic. Since then, i discovered a greater passion for HTML, CSS and Javascript, 
+                        as well as the most used frameworks. My goal is to learn as much as possible and face increasingly complex challenges in order to become one of the best.
                     </p>
                 </div>  
             </div>
@@ -136,14 +144,14 @@
         </div>
     </div>
     <div class="section graphicdes">
-        <h2>I'm a <br class="mob-only"><span id="graff">Graphic Designer</span></h2>
+        <h2><div id="graphicdesigner"></div>I'm a <br class="mob-only"><span id="graff">Graphic Designer</span></h2>
         <div class="graphicdesign">
             <div class="left">
                 <div class="left-text">
-                    <p>Mi piace quando le cose sono belle, sono armoniche ed in grado di attirare l’attenzione rendendo l’esperienza utente ottima.
-                        Mi piace prendermi cura dei miei lavori, occupandomi di tutto, dal web design, alla scelta di icone ed immagini, per poi rendere “codice” i progetti che ho prima creato graficamente.
-                        Mi piacciono i design moderni, minimalisti ed eleganti e metto dentro ad ogni mio lavoro il mio stile.
-                        Cerco di sfruttare al meglio gli strumenti che ho a disposizione per valorizzare ogni commissione</p>
+                    <p>Like all Italians, i like it when things are aesthetically beautiful, harmonics and they are able to attract attention in order to make the User Experience excellent.
+                        I like to take care of my works, from design (logo, images, and the graphic structure), to code.
+                        I like modern, minimal and elegant design, and i always try to make unique every project i do.
+                        </p>
                 </div>
             </div>
             <div class="right">
@@ -165,7 +173,7 @@
         </div>
     </div>
     <div class="section portfolio">
-        <h2>My <span id="port">Portfolio</span></h2>
+        <h2><div id="myportfolio"></div>My <span id="port">Portfolio</span></h2>
         <div class="works">
             <div class="work num1">
                 <img src="/imgs/portfolio.png">
@@ -190,13 +198,13 @@
         </div>
     </div>
     <div class="section contactme">
-        <h2><span id="cnt">Contact me</span><br class="mob-only"> for a project</h2>
+        <h2><div id="contact"></div><span id="cnt">Contact me</span><br class="mob-only"> for a project</h2>
         <div class="formcont">
         <div class="form">
             <div class="sinistra">
                 <div class="left-text">
-                    <p>Wanna hire me for a new project? 
-                    Sono sempre in cerca di una nuova exciting experience, just leave me a message here describing what is your idea, and i will ricontattare</p>
+                    <p>Wanna hire me for a new project?
+                        I'm always looking for some new exciting experiences! Just leave me a message here telling me who you are and what is your idea. I will answer you as soon as possible. </p>
                 </div>
                     <div class="social">
                         <p>or find more here</p>
@@ -241,8 +249,6 @@
                         <p>Service is provided by FormSpree.io</p>
                 </div>
            </div>
-
-
         </div>
         </div>  
     </div>
