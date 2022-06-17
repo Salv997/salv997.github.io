@@ -605,7 +605,20 @@ body{
 #menu li:hover{
     font-weight: 900;
     color: var(--color-3);
+    animation: letterspacing 0.4s linear;
 }
+@keyframes letterspacing {
+    0%{
+        letter-spacing: 0px;
+    }
+    50%{
+        letter-spacing: 1px;
+    }
+    100%{
+        letter-spacing: 0px;
+    }
+}
+
 #menu li:active{
     opacity: 0.8;
     font-size: 2.45em;
@@ -667,6 +680,20 @@ body{
     text-align: center;
     width: 100%;
 }
+.arrow-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10em 0 1em 0;
+}
+.footer p{
+    font-size: 0.8em;
+}
+  
 
 @media(max-width:60em){
     .main-text{
