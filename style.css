@@ -640,8 +640,8 @@ body{
     flex-wrap:wrap;
 }
 .portfolio .work{
-    width: 20em;
-    height: 14em;
+    width: 18em;
+    height: 12em;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
@@ -659,20 +659,20 @@ body{
 }
 .portfolio .work .title{
     position: relative;
-    top: 8em;
-    left: 9em;
+    top: 8.3em;
+    left: 8em;
 }
 .portfolio .work .title p{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
 }
 .portfolio-line{
     height: 4px;
-    width: 400px;
+    width: 500px;
     background-color: var(--color-1);
     position: absolute;
     top: 10.1em;
-    left: 8em;
+    left: 7em;
 }
 .work.num3{
     display: flex;
