@@ -227,29 +227,29 @@ body{
 .table .content .line{
     height: 6px;
     border-radius: 2px;
-    background-color: var(--color-4);
+    background-color: #F06529;
     width: 100%;
 }
 .table .content .line2{
     height: 6px;
     border-radius: 2px;
-    background-color: var(--color-3);
+    background-color: #2965F1;
     width: 100%;
 }
 .table .content .line3{
     height: 6px;
     border-radius: 2px;
-    background-color: var(--color-2);
+    background-color: #F0DB4F;
     width: 100%;
 }
 .fa-html5{
-    color: var(--color-4);
+    color: #F06529;
 }
 .fa-css3-alt{
-    color: var(--color-3);
+    color: #2965F1;
 }
 .fa-js{
-    color: var(--color-2);
+    color: #F0DB4F;
 }
 .frames h5{
     font-size: var(--fs-m);
@@ -280,7 +280,7 @@ body{
 .frame.bootstrap .underline{
     height: 10px;
     width: 100%;
-    background-color: var(--color-4);
+    background-color: var(--color-3);
     position: relative;
     top: 17px;
     border-bottom-right-radius: 10px;
@@ -298,7 +298,7 @@ body{
 .frame.vue .underline{
     height: 10px;
     width: 100%;
-    background-color: var(--color-2);
+    background-color: var(--color-3);
     position: relative;
     top: 17px;
     border-bottom-right-radius: 10px;
@@ -588,7 +588,7 @@ body{
   padding: 50px;
   top: -50px;
   right: -20vw;
-  padding-top: 27vh;
+  padding-top: 23vh;
   padding-right: 10%;
   background: var(--background-color);
   list-style-type: none;
@@ -623,13 +623,15 @@ body{
         letter-spacing: 0px;
     }
 }
-
 #menu li a:active{
     opacity: 0.8;
     font-size: 2.45em;
 }
 #menuToggle input:checked ~ ul{
   transform: none;
+}
+.fw{
+    font-weight: 700;
 }
 .portfolio .works{
     display: flex;
