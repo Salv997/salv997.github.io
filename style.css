@@ -36,6 +36,9 @@ a:link{
     -webkit-user-select: none;
     user-select: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     width: 100vw;
     height: 100vh;
