@@ -182,23 +182,6 @@ body{
 .section .pulsanti .left button:hover::before{
     height: 200%
 }
-.section .pulsanti .right p{
-    color: var(--color-1);
-    font-size: 1.3em;
-}
-.section .pulsanti .right .social-icons i{
-    font-size: 2em;
-    color: var(--color-1);
-    cursor: pointer;
-}
-.section .pulsanti .right .social-icons{
-    display: flex;
-    width: 100%;
-    gap: 1.4em;
-    padding-top: 0.5em;
-    justify-content: center;
-    overflow: hidden;
-}
 .section.webdevel{
     height: auto;
     width: 100%;
@@ -745,9 +728,15 @@ body{
     .section .pulsanti{
         flex-direction: column-reverse;
         padding-top: 6em;
-        gap: 1.5em;
+        gap: 1em;
         padding-right: 0;
         padding-left: 0;
+    }
+    .section .pulsanti .left button{
+        font-size: calc(var(--fs-m) - 0.4em);
+    }
+    .section .pulsanti .right button{
+        font-size: calc(var(--fs-m) - 0.4em);
     }
     .section .pulsanti .left button{
         border: 5px solid var(--color-3);
