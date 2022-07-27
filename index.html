@@ -21,8 +21,27 @@
         gtag('config', 'G-HVLQ252VSK');
     </script>
     <meta name="google-site-verification" content="JpZUzVhbZglDn-OOR3fInVGT6ap1vSXyn63jcipE6uE" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded',() =>{
+            VANTA.WAVES({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            zoom: 1.30,
+            color: 0x111111
+            })
+        })
+    </script>
 </head>
 <body>
+    <div id="vanta"></div>
     <nav role="navigation">
     <div id="menuToggle">
       <input title="menu" class="toggler" type="checkbox"/>
